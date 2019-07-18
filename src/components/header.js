@@ -1,34 +1,59 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+import { colors } from "../utilities"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+const HeaderOuter = styled.header`
+  /* background: #ff4800; */
+  background: ${colors.primary};
+`
+
+const HeaderInner = styled.div`
+  margin: 0 auto;
+  max-width: 60em;
+  padding: 4rem 1rem;
+  display: flex;
+`
+
+const SiteTitle = styled.h1`
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+`
+
+const SiteNav = styled.nav`
+  /* flex-grow: 1; */
+  margin-left: auto;
+  margin-right: -1rem;
+  text-align: right;
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 1rem;
+    }
+  }
+`
+
+const Header = ({ siteTitle, menuLinks }) => (
+  <HeaderOuter>
+    <HeaderInner>
+      <SiteTitle>
+        <Link to="/">{siteTitle}</Link>
+      </SiteTitle>
+      <SiteNav>
+        <ul>
+          {menuLinks.map(link => (
+            <li key={link.name}>
+              <Link to={link.link}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </SiteNav>
+    </HeaderInner>
+  </HeaderOuter>
 )
 
 Header.propTypes = {
