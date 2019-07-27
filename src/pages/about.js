@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
+import { Box, Flex } from "rebass"
 
 const SecondPage = () => (
   <Layout>
@@ -14,6 +15,15 @@ const SecondPage = () => (
       I'm always happy to discuss commisions and other opportunities - drop me a
       line!
     </p>
+
+    <Flex flexWrap="wrap" my={4}>
+      <Box p={3} width={[1, 1 / 2, 1 / 3]} color="black" bg="yellow">
+        Flex
+      </Box>
+      <Box p={3} width={[1, 1 / 2, 2 / 3]} color="white" bg="magenta">
+        Box
+      </Box>
+    </Flex>
   </Layout>
 )
 
