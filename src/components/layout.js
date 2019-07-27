@@ -12,12 +12,17 @@ import Header from "./header"
 import Footer from "./footer"
 import { GlobalStyle } from "../theme/globalStyle"
 import styled from "styled-components"
+import { breakpoints } from "../utilities"
 
 const ContentWrapper = styled.div`
   margin: 0 auto;
   max-width: 60em;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem 2rem;
   min-height: calc(100vh - 16em);
+
+  @media (min-width: ${breakpoints.sidenav}) {
+    margin-left: ${breakpoints.sidenavWidth};
+  }
 `
 
 const Layout = ({ children }) => {

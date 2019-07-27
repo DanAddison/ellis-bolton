@@ -5,7 +5,7 @@ module.exports = {
     author: `Dan Addison`,
     menuLinks: [
       {
-        name: "home",
+        name: "work",
         link: "/",
       },
       {
@@ -41,11 +41,12 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Droid Sans", "Droid Serif"],
+          families: ["Questrial"],
         },
       },
     },
     `gatsby-plugin-styled-components`,
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

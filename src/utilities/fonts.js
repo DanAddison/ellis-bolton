@@ -1,4 +1,4 @@
 export default {
-  body_font: "Droid Sans",
-  feature_font: "Droid Serif",
+  body_font: "Questrial",
+  feature_font: "Questrial",
 }

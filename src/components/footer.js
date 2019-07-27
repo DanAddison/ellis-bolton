@@ -1,17 +1,30 @@
 import React from "react"
 import styled from "styled-components"
+import { breakpoints } from "../utilities"
 
 const FooterWrapper = styled.footer`
   background: #222;
   margin-bottom: 1.45rem;
   color: white;
+  display: block;
+
+  @media (min-width: ${breakpoints.sidenav}) {
+    display: none;
+  }
 `
 const Footline = styled.div`
   margin: 0 auto;
   max-width: 60em;
-  padding: 4rem 1rem;
-  h1 {
-    margin: 0;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  @media (min-width: ${breakpoints.small}) {
+    display: flex;
+    justify-content: space-between;
   }
 `
 

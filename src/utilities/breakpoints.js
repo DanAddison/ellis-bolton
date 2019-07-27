@@ -4,5 +4,6 @@ export default {
   large: "60em",
   xlarge: "80em",
   xxlarge: "90em",
-  menu: "100em",
+  sidenav: "70em",
+  sidenavWidth: "20em",
 }
