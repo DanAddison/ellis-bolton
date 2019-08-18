@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/image"
+import ProfileImage from "../components/profile-image"
 import { Box, Flex } from "rebass"
 
-const SecondPage = () => (
+const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <div style={{ maxWidth: `500px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <ProfileImage />
     </div>
     <p>Hi, I'm Ellis, an illustrator based in Folkestone.</p>
     <p>
@@ -27,4 +27,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default AboutPage
