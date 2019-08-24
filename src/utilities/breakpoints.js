@@ -4,6 +4,6 @@ export default {
   large: "60em",
   xlarge: "80em",
   xxlarge: "90em",
-  sidenav: "70em",
-  sidenavWidth: "20em",
+  sidenav: "72em",
+  sidenavWidth: "18em",
 }

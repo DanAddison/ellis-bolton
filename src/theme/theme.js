@@ -1,14 +1,15 @@
-// example theme.js don't know how to implement yet!!
+/**
+ * example theme.js - don't know how to implement yet!!
+ * tried installing emotion and emotion-theming for example
+ * couldn't get things working so uninstalled the dependencies
+ *
+ * Want to use my own theme so I can override Rebass breakpoints
+ */
 
 export default {
-  breakpoints: ["40em", "52em", "64em"],
-  fontSizes: [14, 16, 20, 24, 32, 48, 64],
+  breakpoints: ["40em", "70em", "100em"],
   colors: {
     danBlue: "#07c",
     danGray: "#f6f6ff",
-  },
-  fonts: {
-    sans: "system-ui, sans-serif",
-    mono: "Menlo, monospace",
   },
 }

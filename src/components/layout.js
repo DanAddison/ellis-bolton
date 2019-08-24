@@ -16,9 +16,9 @@ import { breakpoints } from "../utilities"
 
 const ContentWrapper = styled.div`
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 90em;
   padding: 4rem 1rem 2rem;
-  min-height: calc(100vh - 16em);
+  min-height: calc(100vh - 5em);
 
   @media (min-width: ${breakpoints.sidenav}) {
     margin-left: ${breakpoints.sidenavWidth};

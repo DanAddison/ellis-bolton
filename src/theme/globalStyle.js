@@ -30,6 +30,9 @@ export const GlobalStyle = createGlobalStyle`
     h5 { font-size: 1.75rem; }
     h6 { font-size: 1.25rem; }
   }
+  p {
+    line-height: 1.25;
+  }
   ul {
     margin: 0 auto;
     list-style-type: none;
