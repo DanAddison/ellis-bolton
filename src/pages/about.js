@@ -25,12 +25,9 @@ const Form = styled.form`
   }
 
   /* fix safari bug where text does not input despite field having focus */
-  input {
-    -webkit-user-select: text;
-  }
-
   input,
   textarea {
+    -webkit-user-select: text;
     display: block;
     width: 100%;
     border: 1px solid #ddd;
