@@ -6,8 +6,8 @@ import styled from "styled-components"
 import { colors } from "../utilities"
 
 const Profile = styled.div`
-  margin: 2em auto 0;
-  max-width: 60em;
+  margin: 2em 1em;
+  max-width: 500px;
 `
 
 const Form = styled.form`
@@ -28,7 +28,6 @@ const Form = styled.form`
   textarea {
     display: block;
     width: 100%;
-    font-size: 1.45em;
     border: 1px solid #ddd;
   }
 
@@ -62,9 +61,10 @@ const AboutPage = () => (
   <Layout>
     <Profile>
       <SEO title="About" />
-      <div style={{ maxWidth: `500px`, marginBottom: `1.45rem` }}>
+      <div style={{ marginBottom: `1.45rem` }}>
         <ProfileImage />
       </div>
+
       <p>Hi, I'm Ellis, an illustrator based in Folkestone.</p>
       <p>
         I'm always happy to discuss commisions and other opportunities - drop me

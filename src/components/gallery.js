@@ -15,16 +15,16 @@ const Gallery = () => (
   <StaticQuery
     query={graphql`
       query {
-        galleryImages: allFile(
-          filter: { sourceInstanceName: { eq: "gallery" } }
+        images: allFile(
+          filter: { relativeDirectory: { eq: "portfolio-images" } }
+          sort: { fields: name }
         ) {
-          edges {
-            node {
-              id
-              childImageSharp {
-                fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid
-                }
+          nodes {
+            id
+            name
+            childImageSharp {
+              fluid(maxWidth: 600) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -32,19 +32,20 @@ const Gallery = () => (
       }
     `}
     render={data => {
-      const images = data.galleryImages.edges.map(image => (
-        <Box p={10} width={[1, 1 / 2, 1 / 3]} key={image.node.id}>
+      const galleryImages = data.images.nodes.map(image => (
+        <Box p={10} width={[1, 1 / 2, 1 / 3]} key={image.id}>
           <Img
-            fluid={image.node.childImageSharp.fluid}
+            fluid={image.childImageSharp.fluid}
             style={{
               maxWidth: 500,
             }}
+            alt={image.name}
           />
         </Box>
       ))
       return (
         <Flex flexWrap="wrap" my={4}>
-          {images}
+          {galleryImages}
         </Flex>
       )
     }}

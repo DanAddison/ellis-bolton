@@ -19,15 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `general-images`,
-        path: `${__dirname}/src/images/general-images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `gallery`,
-        path: `${__dirname}/src/images/portfolio-images`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -41,7 +34,7 @@ module.exports = {
         background_color: `#ff4800`,
         theme_color: `#ff4800`,
         display: `minimal-ui`,
-        icon: `src/images/general-images/Ellis.png`, // This path is relative to the root of the site.
+        icon: `src/images/Ellis.png`, // This path is relative to the root of the site.
       },
     },
     {
