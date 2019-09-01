@@ -77,11 +77,10 @@ const AboutPage = () => (
         netlify-honeypot="bot-field"
         data-netlify="true"
       >
-        <input type="hidden" name="form-name" value="Ellis Contact Form" />
-        <p className="ohnohoney">
+        <div className="ohnohoney">
           <label>Don’t fill this out if you're human:</label>
           <input name="bot-field" />
-        </p>
+        </div>
         <div className="form__element">
           <label>Your Name:</label>
           <input type="text" name="user-name" />
