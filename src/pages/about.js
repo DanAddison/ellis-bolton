@@ -29,6 +29,7 @@ const Form = styled.form`
     display: block;
     width: 100%;
     border: 1px solid #ddd;
+    padding: 0.5em;
   }
 
   textarea {
@@ -81,6 +82,7 @@ const AboutPage = () => (
           <label>Don’t fill this out if you're human:</label>
           <input name="bot-field" />
         </div>
+        <input type="hidden" name="form-name" value="Ellis Contact Form" />
         <div className="form__element">
           <label>Your Name:</label>
           <input type="text" name="user-name" />
