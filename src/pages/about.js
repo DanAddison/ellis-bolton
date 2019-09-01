@@ -24,6 +24,11 @@ const Form = styled.form`
     margin-bottom: 0.25em;
   }
 
+  /* fix safari bug where text does not input despite field having focus */
+  input {
+    -webkit-user-select: text;
+  }
+
   input,
   textarea {
     display: block;
@@ -89,7 +94,7 @@ const AboutPage = () => (
         </div>
         <div className="form__element">
           <label>Your Email:</label>
-          <input type="email" name="email" />
+          <input type="email" name="user-email" />
         </div>
         <div className="form__element">
           <label>Message:</label>
