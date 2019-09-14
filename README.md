@@ -1,10 +1,10 @@
 <p align="center">
-  <a href="https://danaddisoncreative.com">
-    <img alt="Gatsby" src="src/images/Ellis.png" width="60" />
+  <a href="https://ellisbolton.com">
+    <img alt="Gatsby" src="src/images/Ellis.png" width="120" />
   </a>
 </p>
 <h1 align="center">
   Ellis Bolton | illustrator
 </h1>
 
-I'm building a portfolio site for an illustrator using the Gatsby default starter
+A portfolio site for an illustrator, built using the Gatsby default starter
