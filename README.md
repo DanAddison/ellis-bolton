@@ -7,8 +7,10 @@
   Ellis Bolton | illustrator
 </h1>
 
-A portfolio site for an illustrator, built using the Gatsby default starter.
+A static site based on Gatsby's default starter.
 
-## This project requires NPM v11.6.0 to run
+## Required
+
+- `node v12.10.0`
 
 I believe it is using a local version of Gatsby CLI instead of a global one??
