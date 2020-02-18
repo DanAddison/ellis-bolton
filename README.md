@@ -11,6 +11,6 @@ A static site based on Gatsby's default starter.
 
 ## Required
 
-- `node v12.10.0`
+- `node v11.6.0`
 
-I believe it is using a local version of Gatsby CLI instead of a global one??
+I installed this project using npx (before I had Gatsby CLI installed globally) so it uses a local version of Gatsby CLI
